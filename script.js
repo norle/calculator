@@ -12,6 +12,8 @@ function multiply(x, y) {
     return x * y
 }
 function divide(x, y) {
+    x = Number(x)
+    y = Number(y)
     return x / y
 }
 
@@ -102,13 +104,14 @@ document.querySelector('#enter').addEventListener('click', e => {
         result = subtract(firstNumber, secondNumber)
     }
     if (operator == '/') {
-        result = (firstNumber, secondNumber)
+        result = divide(firstNumber, secondNumber)
     }
     if (operator == '*') {
         result = multiply(firstNumber, secondNumber)
     }
     enter = 1
     console.log(operator)
+
 
 })
 
