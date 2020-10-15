@@ -1,0 +1,75 @@
+#zero{
+    width:280px;
+    
+}
+#back{
+    width: 280px;
+}
+#add{
+    height: 280px;
+}
+.number{
+    width: 130px;
+    height: 130px;
+    background-color: pink;
+    margin: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    
+}
+.operator{
+    width: 130px;
+    height: 130px;
+    background-color: pink;
+    margin: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+}
+.display{
+    display:flex;
+    width: 750px;
+    height:150px;
+    background-color: lightgrey;
+}
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+.suboperator{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.container{
+    display: flex;
+    width: 750px;
+    background-color: lightgrey;
+}
+.container-operators{
+    width: 300px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.container-numbers{
+    background-color: grey;
+    display:flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    width: 450px;
+    justify-content: center;
+}
