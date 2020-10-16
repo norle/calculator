@@ -1,3 +1,10 @@
+@font-face{
+    font-family:'digital-clock-font';
+    src: url('digital-7.ttf');
+   }
+div{
+    font-family: 'digital-clock-font';
+}
 #zero{
     width:280px;
     
@@ -5,10 +12,26 @@
 #back{
     width: 280px;
 }
-#add{
+.add{
     height: 280px;
 }
+body{
+
+    display:flex;
+    justify-content: center;
+}
+.calculator{
+    display: flex;
+    
+
+}
+.mainBody{
+    border-radius: 20px;
+    border-style: solid
+}
 .clear{
+    position: relative;
+    
     width: 260px;
     height: 130px;
     background-color: red;
@@ -16,7 +39,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 60px;
     border-radius: 10px;
     border-style: solid;
     border-width: 2px;
@@ -29,11 +52,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 60px;
     border-radius: 10px;
     border-style: solid;
     border-width: 2px;
     
+}
+.number:hover{
+    -webkit-box-shadow: -2px -2px 20px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px -2px 20px -7px rgba(0,0,0,0.75);
+box-shadow: -2px -2px 20px -7px rgba(0,0,0,0.75);
 }
 .operator{
     width: 130px;
@@ -43,22 +71,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 60px;
     border-radius: 10px;
     border-style: solid;
     border-width: 2px;
 }
 .display{
+    border-radius:20px 20px 0px 0px;
     display:flex;
     width: 750px;
     height:150px;
     background-color: lightgrey;
+    
 }
 .result{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 60px;
+    font-size: 100px;
 }
 .suboperator{
     display: flex;
@@ -69,6 +99,8 @@
     display: flex;
     width: 750px;
     background-color: lightgrey;
+    border-radius: 20px;
+    
 }
 .container-operators{
     width: 300px;
@@ -77,6 +109,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    border-radius: 0px 0px 20px;
 }
 .container-numbers{
     background-color: grey;
@@ -85,4 +118,5 @@
     flex-wrap: wrap;
     width: 450px;
     justify-content: center;
+    border-radius: 0px 0px 0px 20px;
 }

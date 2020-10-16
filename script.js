@@ -14,7 +14,12 @@ function multiply(x, y) {
 function divide(x, y) {
     x = Number(x)
     y = Number(y)
+    if(y==0){
+        return 'not invented yet'
+    }
+    else{
     return x / y
+    }
 }
 
 
@@ -46,7 +51,7 @@ numbers.forEach(number => {
     number.addEventListener('click', value => {
 
         x = number.getAttribute('data-number')
-
+        if(result.length<15){
 
         if (firstNumber == 'empty') {
             firstNumber = x
@@ -63,7 +68,7 @@ numbers.forEach(number => {
             firstNumber += x;
         }
         console.log(firstNumber)
-
+    }
     })
 })
 
@@ -109,7 +114,10 @@ document.querySelector('#enter').addEventListener('click', e => {
     if (operator == '*') {
         result = multiply(firstNumber, secondNumber)
     }
-    enter = 1
+    
+    firstNumber = result
+    secondNumber = 'empty'
+    operator = 'empty'
     console.log(operator)
 
 
@@ -145,9 +153,15 @@ function displayUpdate(){
 
     }
     if (result !== 'empty') {
+        
         document.querySelector(".result").innerHTML = result;
+        
+    }
+    else if(result == 'empty'){
+        document.querySelector(".result").innerHTML = '';
     }
     else{
-        document.querySelector(".result").innerHTML = '';
+        document.querySelector(".result").innerHTML = 'Error';
+        
     }
 }
